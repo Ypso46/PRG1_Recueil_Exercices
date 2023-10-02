@@ -21,8 +21,6 @@ Votre acronyme est : ADS
 <summary>Solution</summary>
 
 ~~~cpp
-#include <algorithm>
-#include <cstdlib>
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -31,7 +29,7 @@ using namespace std;
 string toupper_str(string_view input){
     string result(input);
     for (char& c : result) {
-        c = std::toupper(c);
+        c = toupper(c);
     }
     return result;
 }
