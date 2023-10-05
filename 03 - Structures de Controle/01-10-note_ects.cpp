@@ -23,7 +23,7 @@ int main() {
         std::cout << "Erreur" << std::endl;
     }
 
-    
+
 
     return 0;
 }

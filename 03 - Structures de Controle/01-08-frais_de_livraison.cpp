@@ -3,7 +3,7 @@
 int main() {
 
     const int livraisonSuisse = 5;
-    const int livraisonSpecialeSuisse = 7; //inclus le Lichtenstein, les Grisons et le Tessin
+    const int livraisonSpecialeSuisse = 7; //inclu le Lichtenstein, les Grisons et le Tessin
     const int livraisonWorld = 10;
 
     std::cout << "Livraison en Suisse ? (O/N) ";
