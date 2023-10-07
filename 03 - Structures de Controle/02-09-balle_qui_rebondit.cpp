@@ -21,8 +21,7 @@ int main() {
         std::cout << "Nombre de rebonds     (n >= 0) : " << std::endl;
         std::cin >> nombreRebonds;
     } while (nombreRebonds < 0);
-
-
+    
     const double G = 9.81;
     double v0 = sqrt((2 * G * hauteurInitiale));
     double v1 = coefRebond * v0;
@@ -33,8 +32,8 @@ int main() {
         v1 = coefRebond * v0;
         hauteur1 = (pow(v1, 2) / (2 * G));
     }
-    
-    std::cout << "La hauteur atteinte après " << nombreRebonds << " rebonds : " << hauteur1 << " [m]";
+
+    std::cout << "La hauteur atteinte après " << nombreRebonds << " rebond" << (nombreRebonds > 1 ? "s" : "") << " : " << hauteur1 << " [m]";
 
     return EXIT_SUCCESS;
 }
