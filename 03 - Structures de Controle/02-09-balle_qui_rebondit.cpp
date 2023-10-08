@@ -21,7 +21,7 @@ int main() {
         std::cout << "Nombre de rebonds     (n >= 0) : " << std::endl;
         std::cin >> nombreRebonds;
     } while (nombreRebonds < 0);
-    
+
     const double G = 9.81;
     double v0 = sqrt((2 * G * hauteurInitiale));
     double v1 = coefRebond * v0;
